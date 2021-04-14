@@ -149,7 +149,7 @@ func UpdatePassword(c *fiber.Ctx) error {
 	userId, _ := strconv.Atoi(id)
 
 	 user := models.User{
-	 	Id: uint(userI),
+	 	Id: uint(userId),
 	 }
 
 	 user.SetPassword(data["password"])
