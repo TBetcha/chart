@@ -86,6 +86,7 @@ func UpdateRole(c *fiber.Ctx) error {
 		Id: uint(id),
 		Name: roleDto["name"].(string),
 		Permissions: permissions,
+
 	}
 
 	database.DB.Model(&role).Updates(role)
